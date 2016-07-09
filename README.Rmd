@@ -30,7 +30,8 @@ read.csv("CourseDocuments/STA580_Schedule.csv",
  dust() %>%
  medley_all_borders() %>%
  sprinkle(pad = 3) %>%
- sprinkle_print_method("html") %>%
+ sprinkle_print_method("markdown") %>%
  print(asis = FALSE) %>%
  cat()
 ```
+

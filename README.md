@@ -7,451 +7,275 @@ These are the homework assignments and project guidelines for **R and Introducto
 Course Schedule
 ---------------
 
-<!--html_preserve-->
-<table align="center" style="border-collapse:collapse;">
-<tr>
-&lt;th colspan = '1'; rowspan = '1'; style='text-align:left;'&gt;Date
-</th>
-&lt;th colspan = '1'; rowspan = '1'; style='text-align:left;'&gt;Week
-</th>
-&lt;th colspan = '1'; rowspan = '1'; style='text-align:left;'&gt;Unit
-</th>
-&lt;th colspan = '1'; rowspan = '1'; style='text-align:left;'&gt;Topic
-</th>
-&lt;th colspan = '1'; rowspan = '1'; style='text-align:left;'&gt;Notes
-</th>
+<table style="width:253%;">
+<colgroup>
+<col width="16%" />
+<col width="8%" />
+<col width="8%" />
+<col width="126%" />
+<col width="93%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Week</th>
+<th align="left">Unit</th>
+<th align="left">Topic</th>
+<th align="left">Notes</th>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-top:1px solid Black;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8/22/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-top:1px solid Black;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;1
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-top:1px solid Black;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;1
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-top:1px solid Black;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Installing R; R Studio; Pandoc. </br>IDE Orientation</br>Finding Help
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-top:1px solid Black;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">8/22/2016</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">Installing R; R Studio; Pandoc. </br>IDE Orientation</br>Finding Help</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8/24/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;1
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;1
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Rmarkdown</br>Rstudio Projects/Reproducibility</br>Finding Help
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;LAST CLASS BEFORE DROP DATE (28 August)</br>Assign Homework \#1
-</td>
+<tr class="even">
+<td align="left">8/24/2016</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">Rmarkdown</br>Rstudio Projects/Reproducibility</br>Finding Help</td>
+<td align="left">LAST CLASS BEFORE DROP DATE (28 August)</br>Assign Homework #1</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8/29/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;2
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;2
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Binary and unary operators</br>Object classes</br>Interpreted and Compiled languages
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">8/29/2016</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">Binary and unary operators</br>Object classes</br>Interpreted and Compiled languages</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8/31/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;2
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;2
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Indexing lists, matrices, arrays, and data frames</br>Functional and Literate Programming
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#1 Due</br>Assign Homework \#2
-</td>
+<tr class="even">
+<td align="left">8/31/2016</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">Indexing lists, matrices, arrays, and data frames</br>Functional and Literate Programming</td>
+<td align="left">Homework #1 Due</br>Assign Homework #2</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/5/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;3
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;LABOR DAY - NO CLASS
-</td>
+<tr class="odd">
+<td align="left">9/5/2016</td>
+<td align="left">3</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">LABOR DAY - NO CLASS</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/7/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;3
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;2
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Matrix operations
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#2 Due</br>Assign Homework \#3</br>Assign Midterm Exam \#1
-</td>
+<tr class="even">
+<td align="left">9/7/2016</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">Matrix operations</td>
+<td align="left">Homework #2 Due</br>Assign Homework #3</br>Assign Midterm Exam #1</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/12/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;4
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;3
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;if, for, while, repeat, break part 1
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">9/12/2016</td>
+<td align="left">4</td>
+<td align="left">3</td>
+<td align="left">if, for, while, repeat, break part 1</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/14/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;4
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;3
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;if, for, while, repeat, break part 2</br>ifelse
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#3 Due</br>Assign Homework \#4
-</td>
+<tr class="even">
+<td align="left">9/14/2016</td>
+<td align="left">4</td>
+<td align="left">3</td>
+<td align="left">if, for, while, repeat, break part 2</br>ifelse</td>
+<td align="left">Homework #3 Due</br>Assign Homework #4</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/19/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;5
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;4
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;function writing I: constructing functions
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">9/19/2016</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">function writing I: constructing functions</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/21/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;5
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;4
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;function writing II: argument checks</br>Intro to dots.
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#4 Due</br>Assign Homework \#5
-</td>
+<tr class="even">
+<td align="left">9/21/2016</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">function writing II: argument checks</br>Intro to dots.</td>
+<td align="left">Homework #4 Due</br>Assign Homework #5</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/26/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;4
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;`apply` Functions I: apply, lapply, sapply
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">9/26/2016</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left"><code>apply</code> Functions I: apply, lapply, sapply</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9/28/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;4
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;`apply` Functions II: mapply
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#5 Due</br>Assign Homework \#6
-</td>
+<tr class="even">
+<td align="left">9/28/2016</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left"><code>apply</code> Functions II: mapply</td>
+<td align="left">Homework #5 Due</br>Assign Homework #6</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/3/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;7
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;5
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Data Management I: Basic transformations
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">10/3/2016</td>
+<td align="left">7</td>
+<td align="left">5</td>
+<td align="left">Data Management I: Basic transformations</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/5/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;7
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;5
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Data Management II: Dates and Strings
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#6 Due</br>Assign Homework \#7
-</td>
+<tr class="even">
+<td align="left">10/5/2016</td>
+<td align="left">7</td>
+<td align="left">5</td>
+<td align="left">Data Management II: Dates and Strings</td>
+<td align="left">Homework #6 Due</br>Assign Homework #7</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/10/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;EXAM WEEK NO CLASS
-</td>
+<tr class="odd">
+<td align="left">10/10/2016</td>
+<td align="left">8</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">EXAM WEEK NO CLASS</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/12/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;5
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Exploratory Data Analysis</br>Graphing
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Midterm \#1 Due
-</td>
+<tr class="even">
+<td align="left">10/12/2016</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">Exploratory Data Analysis</br>Graphing</td>
+<td align="left">Midterm #1 Due</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/17/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;FALL BREAK - NO CLASS
-</td>
+<tr class="odd">
+<td align="left">10/17/2016</td>
+<td align="left">9</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">FALL BREAK - NO CLASS</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/19/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;9
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Confidence Intervals</br>Basic Hypothesis Testing (t.test, chisq.test, fisher.test)
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Assign Midterm Exam \#2
-</td>
+<tr class="even">
+<td align="left">10/19/2016</td>
+<td align="left">9</td>
+<td align="left">6</td>
+<td align="left">Confidence Intervals</br>Basic Hypothesis Testing (t.test, chisq.test, fisher.test)</td>
+<td align="left">Assign Midterm Exam #2</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/24/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Linear Regression and ANOVA</br>Model Diagnostics
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#7 Due</br>Assign Homework \#8
-</td>
+<tr class="odd">
+<td align="left">10/24/2016</td>
+<td align="left">10</td>
+<td align="left">6</td>
+<td align="left">Linear Regression and ANOVA</br>Model Diagnostics</td>
+<td align="left">Homework #7 Due</br>Assign Homework #8</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/26/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Linear Regression and ANOVA</br>Model Diagnostics
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="even">
+<td align="left">10/26/2016</td>
+<td align="left">10</td>
+<td align="left">6</td>
+<td align="left">Linear Regression and ANOVA</br>Model Diagnostics</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;10/31/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Ridge Regression
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">10/31/2016</td>
+<td align="left">11</td>
+<td align="left">6</td>
+<td align="left">Ridge Regression</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/2/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Logistic Regression
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#8 Due</br>Assign Homework \#9
-</td>
+<tr class="even">
+<td align="left">11/2/2016</td>
+<td align="left">11</td>
+<td align="left">6</td>
+<td align="left">Logistic Regression</td>
+<td align="left">Homework #8 Due</br>Assign Homework #9</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/7/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;12
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Survival Analysis (Semi-parametric)
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">11/7/2016</td>
+<td align="left">12</td>
+<td align="left">6</td>
+<td align="left">Survival Analysis (Semi-parametric)</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/9/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;12
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Survival Analysis (Parametric) (time permitting)
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="even">
+<td align="left">11/9/2016</td>
+<td align="left">12</td>
+<td align="left">6</td>
+<td align="left">Survival Analysis (Parametric) (time permitting)</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/14/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;13
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Information Criteria</br>Likelihood Ratio Tests
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">11/14/2016</td>
+<td align="left">13</td>
+<td align="left">6</td>
+<td align="left">Information Criteria</br>Likelihood Ratio Tests</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/16/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;13
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Cross Validation</br>Bootstrapping
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Homework \#9 Due
-</td>
+<tr class="even">
+<td align="left">11/16/2016</td>
+<td align="left">13</td>
+<td align="left">6</td>
+<td align="left">Cross Validation</br>Bootstrapping</td>
+<td align="left">Homework #9 Due</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/21/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;14
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;6
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Random Forest (time permitting)
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;Midterm \#2 Due</br>Assign Final Exam
-</td>
+<tr class="odd">
+<td align="left">11/21/2016</td>
+<td align="left">14</td>
+<td align="left">6</td>
+<td align="left">Random Forest (time permitting)</td>
+<td align="left">Midterm #2 Due</br>Assign Final Exam</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/23/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;14
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;THANKSGIVING BREAK - NO CLASS
-</td>
+<tr class="even">
+<td align="left">11/23/2016</td>
+<td align="left">14</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">THANKSGIVING BREAK - NO CLASS</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/28/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;15
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;7
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Random Number Generation</br>Simulation: Sample Size Estimation
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">11/28/2016</td>
+<td align="left">15</td>
+<td align="left">7</td>
+<td align="left">Random Number Generation</br>Simulation: Sample Size Estimation</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;11/30/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;15
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;7
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Sample Size Simulation
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="even">
+<td align="left">11/30/2016</td>
+<td align="left">15</td>
+<td align="left">7</td>
+<td align="left">Sample Size Simulation</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;12/5/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;16
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Writing Packages (time permitting)
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left">12/5/2016</td>
+<td align="left">16</td>
+<td align="left">8</td>
+<td align="left">Writing Packages (time permitting)</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;12/7/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;16
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;8
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Writing Packages (time permitting)
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="even">
+<td align="left">12/7/2016</td>
+<td align="left">16</td>
+<td align="left">8</td>
+<td align="left">Writing Packages (time permitting)</td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;12/12/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;Help session for final projects
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;IN CLASS QUIZ
-</td>
+<tr class="odd">
+<td align="left">12/12/2016</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Help session for final projects</td>
+<td align="left">IN CLASS QUIZ</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;12/14/2016
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;FINAL EXAM DUE
-</td>
+<tr class="even">
+<td align="left">12/14/2016</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">FINAL EXAM DUE</td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
-<tr>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;NA
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;padding:3px;'&gt;
-</td>
-&lt;td colspan = '1'; rowspan = '1'; style='text-align:left;border-bottom:1px solid Black;border-left:1px solid Black;border-right:1px solid Black;padding:3px;'&gt;
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
+</tbody>
 </table>
-</br></br><!--/html_preserve-->
