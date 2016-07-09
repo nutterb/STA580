@@ -1,0 +1,64 @@
+Date,Week,Unit,Topic,Notes
+8/22/2016,1,1,"Installing R; R Studio; Pandoc. 
+IDE Orientation
+Finding Help",
+8/24/2016,1,1,"Rmarkdown
+Rstudio Projects/Reproducibility
+Finding Help","LAST CLASS BEFORE DROP DATE (28 August)
+Assign Homework #1"
+8/29/2016,2,2,"Binary and unary operators
+Object classes
+Interpreted and Compiled languages",
+8/31/2016,2,2,"Indexing lists, matrices, arrays, and data frames
+Functional and Literate Programming","Homework #1 Due
+Assign Homework #2"
+9/5/2016,3,,,LABOR DAY - NO CLASS
+9/7/2016,3,2,Matrix operations,"Homework #2 Due
+Assign Homework #3
+Assign Midterm Exam #1"
+9/12/2016,4,3,"if, for, while, repeat, break part 1",
+9/14/2016,4,3,"if, for, while, repeat, break part 2
+ifelse","Homework #3 Due
+Assign Homework #4"
+9/19/2016,5,4,function writing I: constructing functions,
+9/21/2016,5,4,"function writing II: argument checks
+Intro to dots.","Homework #4 Due
+Assign Homework #5"
+9/26/2016,6,4,"`apply` Functions I: apply, lapply, sapply",
+9/28/2016,6,4,`apply` Functions II: mapply,"Homework #5 Due
+Assign Homework #6"
+10/3/2016,7,5,Data Management I: Basic transformations,
+10/5/2016,7,5,Data Management II: Dates and Strings,"Homework #6 Due
+Assign Homework #7"
+10/10/2016,8,,,EXAM WEEK NO CLASS
+10/12/2016,8,5,"Exploratory Data Analysis
+Graphing",Midterm #1 Due
+10/17/2016,9,,,FALL BREAK - NO CLASS
+10/19/2016,9,6,"Confidence Intervals
+Basic Hypothesis Testing (t.test, chisq.test, fisher.test)",Assign Midterm Exam #2
+10/24/2016,10,6,"Linear Regression and ANOVA
+Model Diagnostics","Homework #7 Due
+Assign Homework #8"
+10/26/2016,10,6,"Linear Regression and ANOVA
+Model Diagnostics",
+10/31/2016,11,6,Ridge Regression,
+11/2/2016,11,6,Logistic Regression,"Homework #8 Due
+Assign Homework #9"
+11/7/2016,12,6,Survival Analysis (Semi-parametric),
+11/9/2016,12,6,Survival Analysis (Parametric) (time permitting),
+11/14/2016,13,6,"Information Criteria
+Likelihood Ratio Tests",
+11/16/2016,13,6,"Cross Validation
+Bootstrapping",Homework #9 Due
+11/21/2016,14,6,Random Forest (time permitting),"Midterm #2 Due
+Assign Final Exam"
+11/23/2016,14,,,THANKSGIVING BREAK - NO CLASS
+11/28/2016,15,7,"Random Number Generation
+Simulation: Sample Size Estimation",
+11/30/2016,15,7,Sample Size Simulation,
+12/5/2016,16,8,Writing Packages (time permitting),
+12/7/2016,16,8,Writing Packages (time permitting),
+12/12/2016,,,Help session for final projects,IN CLASS QUIZ
+12/14/2016,,,,FINAL EXAM DUE
+,,,,
+,,,,

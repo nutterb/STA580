@@ -1,0 +1,36 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(dplyr)
+library(pixiedust)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# STA 580 / STA 780: R and Introductory Data Mining
+
+These are the homework assignments and project guidelines for **R and Introductory Data Mining** at Eastern Kentucky University. 
+
+## Course Schedule
+
+```{r, echo = FALSE, results = 'asis'}
+read.csv("CourseDocuments/STA580_Schedule.csv",
+         stringsAsFactors = FALSE) %>%
+ mutate(Topic = gsub("\\n", "</br>", Topic),
+        Notes = gsub("\\n", "</br>", Notes)) %>%
+ dust() %>%
+ medley_all_borders() %>%
+ sprinkle(pad = 3) %>%
+ sprinkle_print_method("html") %>%
+ print(asis = FALSE) %>%
+ cat()
+```
