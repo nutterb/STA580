@@ -1,0 +1,62 @@
+---
+title: 'Homework #1'
+output: html_document
+---
+
+## Objectives
+
+1. Demonstrate familiarity with seeking help and guidance in using R.
+2. Practice using R Studio projects.
+3. Practice using R Markdown scripts.
+
+## Expectations
+
+1. The assignment must be submitted as a zip file containing an RStudio project and an R markdown script.  
+2. The R markdown script must be reproducible. 
+3. In exercises where you are asked to describe or explain, provide several sentences in your answer.
+4. Your R markdown script should include the text of the original exercise as a block quote.
+
+## Assignments
+
+### Demonstrate familiarity with seeking help and guidance in using R
+
+#### Exercise 1
+
+In the R console, type `?help`. Read the documentation for the `help` function.  Pay particular attention to the "See Also" section of the documentation.  List two other functions you may use to find help within R.
+
+#### Exercise 2
+
+Describe the difference between the `?` and `??` functions.
+
+#### Exercise 3
+
+How would you pull up the documentation for operators (ie, `+`, `*`, `%%`) using the `?` function?  How would you do it using the `help` function.
+
+#### Exercise 4
+
+Visit [The R Project](https://www.r-project.org/) website.  Find the link to "Mailing Lists".  List five special interest topics for which mailing lists exist. Display these topics in an itemized list, with links to each of the mailing list web page.
+
+#### Exercise 5
+
+List four websites where you can find help and/or instruction for using R.  These may include blogs, help sites, tutorials, etc.  Which of the sites you found do you think have the most potential to help you solve problems in R?  Explain your reasoning.
+
+### Practice using R Markdown scripts
+
+#### Exercise 6
+Write a sentence that includes bold text.
+
+#### Exercise 7
+Write a sentence that includes italic text.
+
+#### Exercise 8
+Create a table with three columns.  
+
+1. The first column should be an R package name (and a link to the package home page on CRAN)
+2. The second column should be the current version of the package
+3. The third column should be the package author's name.
+
+#### Exercise 9
+Create a block of R code that demonstrates how to load the `dplyr`, `tidyr`, and `ggplot2` packages.
+
+#### Exercise 10
+Create a block of R code that demonstrates how to pull up the help file associated with a package.
