@@ -1,0 +1,402 @@
+---
+title: 'Lecture Outline: Unit One'
+output: 
+  slidy_presentation:
+  html_document:
+    toc: yes
+---
+
+### R as a Glorified Calculator
+
+Run the following code
+
+```{r, eval = FALSE}
+?`+`
+```
+
+1. Basic operators
+2. `%%`
+3. `%/%`
+
+### Recycling
+
+R tries very hard not to fail
+
+```{r}
+x <- c(1, 2, 3)
+y <- c(1, 2)
+
+x + y
+```
+
+### Operators are functions
+
+This is really, really important.
+
+All of the operators in R are functions, even though they may not look like it.  
+
+```{r}
+1 + 1
+
+`+`(1, 1)
+```
+
+### Operators are functions
+
+Note that you can always call an operator as a function by enclosing it in backticks.
+
+```{r}
+2^3
+
+`^`(2, 3)
+```
+
+### Operators are functions
+
+This is important because it tells us how to find documentation for operators.
+```{r, eval = FALSE}
+?`-`
+?`%in%`
+?`%/%`
+?`%*%`
+?`:`
+```
+
+### Assignment Operator
+
+R has three
+
+1. `<-` (keyboard shortcut)
+2. `=`
+3. `->`
+
+I have seen `->` exactly twice in my life.
+
+You can sometimes find a debate about whether to use `<-` or `=`.  Here's what you really need to know about the debate.
+
+1. It doesn't matter.
+2. Both `<-` and `=` may be used for assignment
+3. Only `=` may be used for setting arguments in functions
+
+### Assignment operators are functions too!
+
+```{r}
+`<-`("x", 2)
+x
+
+`<-`("y", "hello")
+y
+```
+
+I've never seen anyone do it...and it would be rare that you would have a reason to.  The point I'm trying to make here is: operators are functions!
+
+### Oh, and guess what: R has a _fourth_ assignment operator
+
+You may occasionally find reference to the `<<-` operator.  Here's what you need to know about `<<-`
+
+1. Don't use it
+2. If you think you have found a special case where it is appropriate to use `<<-`, ask yourself if you're doing something wrong.
+3. Answer yes.
+4. Refer to #1.
+
+### `magrittr` pipe operators
+
+```{r}
+library(magrittr)
+```
+
+Standard deviation without pipes
+
+```{r}
+set.seed(pi)
+x <- rnorm(15)
+
+sum((x - mean(x)) ^ 2) / (length(x) - 1)
+```
+
+```{r}
+(x - mean(x)) %>%
+ `^`(2) %>%
+ sum() %>%
+ `/`(length(x) - 1)
+```
+
+Notice that pipes don't really make this example any more clear.  When we begin using functions, their utility will be better understood.
+
+### Object Oriented Programming
+
+Objects are....something.
+
+Think of them as a collection of information.
+
+1. Content
+2. Attribute
+3. Class
+
+### Object Oriented Programming
+
+The most common types of objects in R are 
+
+1. `vector`
+2. `matrix`
+3. `array`
+4. `list`
+5. `data.frame`
+
+### OOP: Vectors
+
+A vector is, strictly speaking, a one-dimensional array.  These may take one of several common classes:
+
+1. `numeric`
+2. `integer`
+3. `character`
+4. `factor`
+5. `Date`
+6. `POSIXct`
+
+### OOP: Matrix
+
+A matrix is, strictly speaking, a two-dimensional array.  Every element of the matrix must be of the same type. 
+
+```{r}
+x <- matrix(1:10, ncol = 5)
+x
+class(x)
+typeof(x)
+```
+
+### OOP: Matrix
+
+```{r}
+x[1, 1] <- "Character"
+x
+class(x)
+typeof(x)
+```
+
+The constraint that every element of the same type often makes matrices undesirable for use in storing data.  However, they are often useful in conducting calculations (so long as you keep them numeric).
+
+### OOP: Array
+
+An array is an n-dimensional array of values.
+
+```{r}
+x <- array(1:3, c(2,4,5))
+x[1, 1, 5]
+x[1, 2, 5]
+```
+
+We won't use arrays much in this course.  Instead our focus will be mostly on rectangular data.
+
+### OOP: List
+
+A list is a collection of other objects of any type.  It is useful for bundling information together when it pertains to a common concept.
+
+```{r}
+list(
+ name = c("Carl", "Melissa", "Megan"),
+ age = c(39, 27, 33),
+ text = "What you see here is a character vector of length 1."
+)
+```
+
+The overwhelming majority of objects you will encounter in R are lists, even if that isn't obvious.
+
+### OOP: Data Frame
+
+The object you most frequently encounter is the `data.frame`.  
+
+A data frame is a special case of a list with the following constraints
+
+1. every element is a vector (not necessarily the same class)
+2. every element has the same length
+
+```{r}
+class(mtcars)
+
+# print first 6 rows of the `mtcars` data frame.
+head(mtcars)
+```
+
+Wait...that looks like a matrix!
+
+### OOP: Classes and Methods
+
+Every object has a _class_.  Object classes determine how the object is handled by a _generic_ function.  Specifically, the generic function tries to pass the object to an appropriate _method_.
+
+Methods are determined by the format `[generic].[class]`
+
+For example, the generic function `print` looks at the class of the object it receives and searches for a method of the appropriate class.  
+
+```{r, eval = FALSE}
+methods("print")
+```
+
+### OOP: Classes and Methods
+
+If we feel the need to, we can bypass the printing method for a class for a different method we may prefer.
+
+```{r, eval = FALSE}
+print.default(mtcars)
+
+print.data.frame(mtcars)
+```
+
+Note: this only works for classes that are similar in structure.  It is usually unnecessary, though sometimes useful when programming packages.
+
+### OOP: Classes and Methods
+
+Another generic function with a lot of methods is `summary`.  Notice how it behaves with vectors of different types.
+
+```{r, eval = FALSE}
+# numeric
+summary(rnorm(50))
+
+#* factor
+summary(factor(sample(letters[1:5], 50, replace = TRUE)))
+
+#* date
+summary(seq(Sys.Date(), Sys.Date()+ 50, by = 1))
+```
+
+### Compiled and Interpreted Languages
+
+Code in a compiled language might look like:
+
+```
+x int;
+y double;
+z string;
+
+x <- 1L
+y <- 2.4
+z <- "Look, Ma! No hands!"
+```
+
+Code in an interpreted language might look like:
+
+```
+x <- 1
+y <- 2.4
+z <- "Look, Ma! No hands!"
+```
+
+### Compiled and Interpreted Languages
+
+Okay, so those seem like the same thing.  Why are they different?
+
+### Indexing vectors
+
+Indexing is performed using the `[` operator.
+
+```{r}
+x <- 1:10
+
+x[3]
+
+x[c(3, 5, 9)]
+```
+
+
+### Indexing vectors with logic
+
+```{r}
+set.seed(1234)
+x <- rnorm(10)
+
+x < 0
+
+x[x < 0]
+```
+
+### Indexing matrices
+
+Not that much different than indexing vectors, but there are two dimensions
+
+```{r}
+m <- matrix(letters[1:15], nrow = 3, ncol = 5)
+m
+
+m[2, 3]
+```
+
+### Indexing matrices
+
+You don't have to provide both indices
+
+```{r}
+m[1, ]
+
+m[, 2]
+```
+
+But notice these both return a vector
+
+
+### Indexing data frames
+
+In principle, data frames may be indexed like matrices
+
+```{r}
+mtcars[1, 3]
+
+mtcars[1, ]
+
+mtcars[, 3]
+```
+
+### Indexing data frames
+
+We have some extra flexibility with data frames, too--we can index by the column name.
+
+```{r}
+mtcars[1, "mpg"]
+
+mtcars[, c("mpg", "qsec", "am")] %>% head()
+```
+
+### Indexing data frames
+
+Some other indexing tricks to be aware of with data frames
+
+```{r}
+mtcars["mpg"] %>% head()
+
+mtcars[["mpg"]] %>% head()
+```
+
+How are these different?  Any why?
+
+### Indexing lists
+
+We just covered this!
+
+No really, we did.
+
+...because data frames are......
+
+
+### Functional Programming
+
+Functional programming is "a style of building the structure and elements of computer programs that treats computation as the evaluation of mathematical functions." (https://en.wikipedia.org/wiki/Functional_programming; yes, I just cited Wikipedia)
+
+Go to the link to contrast with Imperative Programming
+
+### Literate Programming
+
+"Literate programming is an approach to programming introduced by Donald Knuth in which a program is given as an explanation of the program logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which a compilable source code can be generated." (yup, more wikipedia, https://en.wikipedia.org/wiki/Literate_programming)
+
+### Literate Programming
+
+R is not a "literate language."  
+
+In fact, no language is literate.
+
+**Programmers are responsible for invoking literate programming practices**
+
+R Markdown is a tool that assists in literate programming.
+
+### Literate Programming
+
+Statistics is the art of telling a story with data.
+

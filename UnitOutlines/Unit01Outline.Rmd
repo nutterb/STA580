@@ -1,0 +1,131 @@
+---
+title: 'Lecture Outline: Unit One'
+output: 
+  html_document:
+    toc: yes
+---
+
+### General Information
+
+1. Introductions
+2. Important dates
+3. Syllabus
+4. Course schedule
+5. Homework/exam expectations
+6. 780 Expectations
+
+**Independence of work**
+
+It is expected that you will learn the skills required to become a proficient statistical programmer in the R language.  However, it is also anticipated (inevitable?) that you will come across problems that you cannot solve independently. In such cases, 
+
+1. It is expected that you will make a good faith effort to solve the problem independently.
+2. It is permissible to seek guidance, insight, or tips from classmates and instructors.
+3. It is permissible to seek help from other sources.  Note that searching and soliciting help online is a valid and important skill for statistical programmers.  
+4. In fact, you are _encouraged_ to use online resources to **assist** you.  You should not rely on online resources to complete your work for you.
+5. Beware! I'm a frequent contributor on the popular programming help sites.  (spooky!)
+
+### Installation
+
+#### Installing R
+
+1. Go to https://cran.r-project.org/
+2. Select the download link for your operating system
+3. Click on the `base` link
+4. Click on `Download R 3.3.1 for [Operating System]`
+5. Follow your usual installation procedure once the file is downloaded
+
+#### Installing R Studio
+
+1. Go to https://www.rstudio.com/
+2. Under the "Products" menu, select "RStudio"
+3. Click on the "Desktop" option
+4. Click on "Download RStudio Desktop"
+5. Click on the link with the installer for your operating system
+6. Follow your usual installation procedure once the file is downloaded
+
+#### Installing Pandoc
+
+1. Go to http://pandoc.org/
+2. Click on the "Installing" link
+3. Follow the instructions for your operating system.
+4. Do not proceed with directions for installing additional software for PDF output.  This class will not expect you to generate PDF output.
+
+
+### IDE Orientation
+
+1. Console
+2. Script editor
+3. Environment window
+4. History window
+5. Plots window
+6. Git window (not used in this course)
+7. Files window
+8. Packages window
+9. Help window
+10. Viewer pane
+
+**Other useful tools**
+
+1. Keyboard shortcuts
+2. Appearance options
+3. Customizing the IDE
+4. Cheat sheats
+5. Markdown Reference
+
+
+### Finding Help
+
+1. `?`
+2. `??`
+3. `help`
+4. R-help mailing lists
+5. r-bloggers
+6. stackoverflow.com
+7. Google with prefixes "R" and "R-help"
+
+Often times, knowing the right keyword is crucial to getting a solution.  If you don't know the right key word, it's hard to hit the solution via search engine.
+
+**Minimal Complete Verifiable Example (MCVE)**
+
+http://stackoverflow.com/help/mcve
+
+1. `dput`
+2. Your example should run on a clean session
+3. Include all of the packages you are using
+4. `sessionInfo`
+5. Include a description of the things you have tried that have not worked
+6. Include a copy of any errors, warnings, or messages you receive.  If you receive what you believe to be faulty output, include the faulty output.
+7. As often as possible, provide an example of what you expect the final output should look like.
+
+Many times, if you don't know the right search term, but can provide an MCVE, other R community members will provide you with the search term you need, or may even provide the solution.
+
+
+### R Markdown
+
+Don't let the brevity of this part of the outline fool you.  This is a big topic of great importance.
+
+1. Highlights from the cheat sheet
+2. Formulae
+3. Tables
+
+### RStudio Project and Reproducibility
+
+In the context of statistical programming, reproducibility means:
+
+1. Your code works on your machine.
+2. Your code works on my machine.
+3. Your code works on any machine that receives your code.
+
+To maintain reproducibility, understand
+
+1. Working directory
+2. Relative path
+3. RStudio Project (it sets the working directory to the project folder)
+4. All files related to a script must be in the same folder as the project, or in a sub folder.
+5. _Do not_ reference other folders on your machine.  This almost certainly leads to non-reproducible code.
+6. Do not use spaces in folder and file names (not all operating systems support this)
+
+
+### Review of finding help
+
+### Homework Assignment #1
