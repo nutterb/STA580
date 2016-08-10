@@ -6,6 +6,7 @@ output:
     toc: yes
 ---
 
+
 ### R as a Glorified Calculator
 
 Run the following code
@@ -399,4 +400,113 @@ R Markdown is a tool that assists in literate programming.
 ### Literate Programming
 
 Statistics is the art of telling a story with data.
+
+### Matrix Operations: Addition
+
+```{r}
+a <- matrix(1:9, nrow = 3, byrow = TRUE)
+b <- matrix(9:1, nrow = 3, byrow = FALSE)
+
+a + b
+a - b
+```
+
+### Matrix Operations: Addition
+
+```{r, error = TRUE}
+a <- matrix(1:9, nrow = 3, byrow = TRUE)
+b <- matrix(1:16, nrow = 4, byrow = TRUE)
+
+a + b
+```
+
+### Matrix Operations: Addition
+
+```{r, error = TRUE}
+a <- matrix(1:9, nrow = 3, byrow = TRUE)
+b <- matrix(letters[1:9], nrow = 3, byrow = TRUE)
+
+a + b
+```
+
+
+### Matrix Operations: Multiplication
+
+`?'%*%'`
+
+```{r}
+a <- matrix(1:9, nrow = 3, byrow = TRUE)
+b <- matrix(1:9, nrow = 3, byrow = FALSE)
+
+a %*% b
+```
+
+
+### Matrix Operations: Multiplication
+
+```{r}
+a <- matrix(1:3, nrow = 3)
+b <- matrix(1:3, nrow = 1)
+
+a %*% b
+
+b %*% a
+```
+
+### Matrix Operations: Transposition
+
+```{r}
+a <- matrix(1:9, nrow = 3)
+t(a)
+```
+
+### Matrix Operations: Diagonals
+
+```{r}
+a <- matrix(1:9, nrow = 3)
+diag(a)
+```
+
+### Matrix Operations: Triangular Matrices
+
+```{r}
+a <- matrix(1:9, nrow = 3)
+upper.tri(a)
+lower.tri(a)
+```
+
+```{r}
+b <- matrix(1:12, nrow = 3)
+upper.tri(b)
+```
+
+### Matrix Operations: Inverse Matrices
+
+`?solve`
+
+```{r}
+a <- matrix(rnorm(9), nrow = 3)
+
+solve(a)
+
+a %*% solve(a)
+```
+
+### Matrix Operations: Linear Regression
+
+
+$$ b = (X'X)^{-1}X'Y $$
+
+
+```{r}
+Y <- mtcars["mpg"] %>%
+       as.matrix()
+X <- mtcars[c("qsec", "wt", "disp")] %>%
+       cbind(1, .) %>%
+       as.matrix()
+
+(t(X) %*% X) %>%
+ solve() %*% t(X) %*% Y
+
+lm(mpg ~ qsec + wt + disp, data = mtcars)
 

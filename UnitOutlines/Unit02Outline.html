@@ -288,25 +288,24 @@ x[<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span
 <span class="co">#* date</span>
 <span class="kw">summary</span>(<span class="kw">seq</span>(<span class="kw">Sys.Date</span>(), <span class="kw">Sys.Date</span>()+<span class="st"> </span><span class="dv">50</span>, <span class="dt">by =</span> <span class="dv">1</span>))</code></pre></div>
 </div>
-<div id="functional-programming" class="slide section level3">
-<h1>Functional Programming</h1>
-<p>Functional programming is “a style of building the structure and elements of computer programs that treats computation as the evaluation of mathematical functions.” (<a href="https://en.wikipedia.org/wiki/Functional_programming" class="uri">https://en.wikipedia.org/wiki/Functional_programming</a>; yes, I just cited Wikipedia)</p>
-<p>Go to the link to contrast with Imperative Programming</p>
+<div id="compiled-and-interpreted-languages" class="slide section level3">
+<h1>Compiled and Interpreted Languages</h1>
+<p>Code in a compiled language might look like:</p>
+<pre><code>x int;
+y double;
+z string;
+
+x &lt;- 1L
+y &lt;- 2.4
+z &lt;- &quot;Look, Ma! No hands!&quot;</code></pre>
+<p>Code in an interpreted language might look like:</p>
+<pre><code>x &lt;- 1
+y &lt;- 2.4
+z &lt;- &quot;Look, Ma! No hands!&quot;</code></pre>
 </div>
-<div id="literate-programming" class="slide section level3">
-<h1>Literate Programming</h1>
-<p>“Literate programming is an approach to programming introduced by Donald Knuth in which a program is given as an explanation of the program logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which a compilable source code can be generated.” (yup, more wikipedia, <a href="https://en.wikipedia.org/wiki/Literate_programming" class="uri">https://en.wikipedia.org/wiki/Literate_programming</a>)</p>
-</div>
-<div id="literate-programming-1" class="slide section level3">
-<h1>Literate Programming</h1>
-<p>R is not a “literate language.”</p>
-<p>In fact, no language is literate.</p>
-<p><strong>Programmers are responsible for invoking literate programming practices</strong></p>
-<p>R Markdown is a tool that assists in literate programming.</p>
-</div>
-<div id="literate-programming-2" class="slide section level3">
-<h1>Literate Programming</h1>
-<p>Statistics is the art of telling a story with data.</p>
+<div id="compiled-and-interpreted-languages-1" class="slide section level3">
+<h1>Compiled and Interpreted Languages</h1>
+<p>Okay, so those seem like the same thing. Why are they different?</p>
 </div>
 <div id="indexing-vectors" class="slide section level3">
 <h1>Indexing vectors</h1>
@@ -391,8 +390,165 @@ m</code></pre></div>
 <pre><code>## [1] 21.0 21.0 22.8 21.4 18.7 18.1</code></pre>
 <p>How are these different? Any why?</p>
 </div>
-<div id="indexing-data-frames-3" class="slide section level3">
-<h1>Indexing data frames</h1>
+<div id="indexing-lists" class="slide section level3">
+<h1>Indexing lists</h1>
+<p>We just covered this!</p>
+<p>No really, we did.</p>
+<p>…because data frames are……</p>
+</div>
+<div id="functional-programming" class="slide section level3">
+<h1>Functional Programming</h1>
+<p>Functional programming is “a style of building the structure and elements of computer programs that treats computation as the evaluation of mathematical functions.” (<a href="https://en.wikipedia.org/wiki/Functional_programming" class="uri">https://en.wikipedia.org/wiki/Functional_programming</a>; yes, I just cited Wikipedia)</p>
+<p>Go to the link to contrast with Imperative Programming</p>
+</div>
+<div id="literate-programming" class="slide section level3">
+<h1>Literate Programming</h1>
+<p>“Literate programming is an approach to programming introduced by Donald Knuth in which a program is given as an explanation of the program logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which a compilable source code can be generated.” (yup, more wikipedia, <a href="https://en.wikipedia.org/wiki/Literate_programming" class="uri">https://en.wikipedia.org/wiki/Literate_programming</a>)</p>
+</div>
+<div id="literate-programming-1" class="slide section level3">
+<h1>Literate Programming</h1>
+<p>R is not a “literate language.”</p>
+<p>In fact, no language is literate.</p>
+<p><strong>Programmers are responsible for invoking literate programming practices</strong></p>
+<p>R Markdown is a tool that assists in literate programming.</p>
+</div>
+<div id="literate-programming-2" class="slide section level3">
+<h1>Literate Programming</h1>
+<p>Statistics is the art of telling a story with data.</p>
+</div>
+<div id="matrix-operations-addition" class="slide section level3">
+<h1>Matrix Operations: Addition</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)
+b &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">9</span>:<span class="dv">1</span>, <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">FALSE</span>)
+
+a +<span class="st"> </span>b</code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]   10    8    6
+## [2,]   12   10    8
+## [3,]   14   12   10</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a -<span class="st"> </span>b</code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]   -8   -4    0
+## [2,]   -4    0    4
+## [3,]    0    4    8</code></pre>
+</div>
+<div id="matrix-operations-addition-1" class="slide section level3">
+<h1>Matrix Operations: Addition</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)
+b &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">16</span>, <span class="dt">nrow =</span> <span class="dv">4</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)
+
+a +<span class="st"> </span>b</code></pre></div>
+<pre><code>## Error in a + b: non-conformable arrays</code></pre>
+</div>
+<div id="matrix-operations-addition-2" class="slide section level3">
+<h1>Matrix Operations: Addition</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)
+b &lt;-<span class="st"> </span><span class="kw">matrix</span>(letters[<span class="dv">1</span>:<span class="dv">9</span>], <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)
+
+a +<span class="st"> </span>b</code></pre></div>
+<pre><code>## Error in a + b: non-numeric argument to binary operator</code></pre>
+</div>
+<div id="matrix-operations-multiplication" class="slide section level3">
+<h1>Matrix Operations: Multiplication</h1>
+<p><code>?'%*%'</code></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)
+b &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">FALSE</span>)
+
+a %*%<span class="st"> </span>b</code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]   14   32   50
+## [2,]   32   77  122
+## [3,]   50  122  194</code></pre>
+</div>
+<div id="matrix-operations-multiplication-1" class="slide section level3">
+<h1>Matrix Operations: Multiplication</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">3</span>, <span class="dt">nrow =</span> <span class="dv">3</span>)
+b &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">3</span>, <span class="dt">nrow =</span> <span class="dv">1</span>)
+
+a %*%<span class="st"> </span>b</code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    2    3
+## [2,]    2    4    6
+## [3,]    3    6    9</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">b %*%<span class="st"> </span>a</code></pre></div>
+<pre><code>##      [,1]
+## [1,]   14</code></pre>
+</div>
+<div id="matrix-operations-transposition" class="slide section level3">
+<h1>Matrix Operations: Transposition</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>)
+<span class="kw">t</span>(a)</code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    2    3
+## [2,]    4    5    6
+## [3,]    7    8    9</code></pre>
+</div>
+<div id="matrix-operations-diagonals" class="slide section level3">
+<h1>Matrix Operations: Diagonals</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>)
+<span class="kw">diag</span>(a)</code></pre></div>
+<pre><code>## [1] 1 5 9</code></pre>
+</div>
+<div id="matrix-operations-triangular-matrices" class="slide section level3">
+<h1>Matrix Operations: Triangular Matrices</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">9</span>, <span class="dt">nrow =</span> <span class="dv">3</span>)
+<span class="kw">upper.tri</span>(a)</code></pre></div>
+<pre><code>##       [,1]  [,2]  [,3]
+## [1,] FALSE  TRUE  TRUE
+## [2,] FALSE FALSE  TRUE
+## [3,] FALSE FALSE FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">lower.tri</span>(a)</code></pre></div>
+<pre><code>##       [,1]  [,2]  [,3]
+## [1,] FALSE FALSE FALSE
+## [2,]  TRUE FALSE FALSE
+## [3,]  TRUE  TRUE FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">b &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span>:<span class="dv">12</span>, <span class="dt">nrow =</span> <span class="dv">3</span>)
+<span class="kw">upper.tri</span>(b)</code></pre></div>
+<pre><code>##       [,1]  [,2]  [,3] [,4]
+## [1,] FALSE  TRUE  TRUE TRUE
+## [2,] FALSE FALSE  TRUE TRUE
+## [3,] FALSE FALSE FALSE TRUE</code></pre>
+</div>
+<div id="matrix-operations-inverse-matrices" class="slide section level3">
+<h1>Matrix Operations: Inverse Matrices</h1>
+<p><code>?solve</code></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">rnorm</span>(<span class="dv">9</span>), <span class="dt">nrow =</span> <span class="dv">3</span>)
+
+<span class="kw">solve</span>(a)</code></pre></div>
+<pre><code>##            [,1]       [,2]       [,3]
+## [1,]  65.063604 -7.9422362 -31.070319
+## [2,]   9.251195 -0.2029543  -5.426029
+## [3,] -61.547888  7.3910463  28.329755</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a %*%<span class="st"> </span><span class="kw">solve</span>(a)</code></pre></div>
+<pre><code>##               [,1]         [,2]         [,3]
+## [1,]  1.000000e+00 0.000000e+00 1.776357e-15
+## [2,] -7.105427e-15 1.000000e+00 3.552714e-15
+## [3,] -7.105427e-15 8.881784e-16 1.000000e+00</code></pre>
+</div>
+<div id="matrix-operations-linear-regression" class="slide section level3">
+<h1>Matrix Operations: Linear Regression</h1>
+<p><span class="math display">\[ b = (X'X)^{-1}X'Y \]</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Y &lt;-<span class="st"> </span>mtcars[<span class="st">&quot;mpg&quot;</span>] %&gt;%
+<span class="st">       </span><span class="kw">as.matrix</span>()
+X &lt;-<span class="st"> </span>mtcars[<span class="kw">c</span>(<span class="st">&quot;qsec&quot;</span>, <span class="st">&quot;wt&quot;</span>, <span class="st">&quot;disp&quot;</span>)] %&gt;%
+<span class="st">       </span><span class="kw">cbind</span>(<span class="dv">1</span>, .) %&gt;%
+<span class="st">       </span><span class="kw">as.matrix</span>()
+
+(<span class="kw">t</span>(X) %*%<span class="st"> </span>X) %&gt;%
+<span class="st"> </span><span class="kw">solve</span>() %*%<span class="st"> </span><span class="kw">t</span>(X) %*%<span class="st"> </span>Y</code></pre></div>
+<pre><code>##                mpg
+## 1    19.7775575655
+## qsec  0.9266492353
+## wt   -5.0344097167
+## disp -0.0001278962</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">lm</span>(mpg ~<span class="st"> </span>qsec +<span class="st"> </span>wt +<span class="st"> </span>disp, <span class="dt">data =</span> mtcars)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ qsec + wt + disp, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)         qsec           wt         disp  
+##  19.7775576    0.9266492   -5.0344097   -0.0001279</code></pre>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->

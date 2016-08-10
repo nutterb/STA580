@@ -1,0 +1,70 @@
+---
+title: 'Homework #3'
+output: html_document
+---
+
+## Objectives
+
+1. Demonstrate the use of matrix operators
+
+## Expectations
+
+1. The assignment must be submitted as a zip file containing an RStudio project and an R markdown script.  
+2. The R markdown script must be reproducible. 
+3. In exercises where you are asked to describe or explain, provide several sentences in your answer.
+4. Your R markdown script should include the text of the original exercise as a block quote.
+
+(Exercises from https://www.r-bloggers.com/matrix-exercises/)
+
+### Exercise 1
+Create three vectors  x,y,z  with integers and each vector has 3 elements. Combine the three vectors to become a 3×3 matrix  `A`  where each **column** represents a vector. Change the row names to  `a`,`b`, and `c`.
+
+Now rewrite the matrix so that each **row** represents a vector, can you modify your code to implement it?
+
+### Exercise 2
+Please check your result from Exercise 1, using  `is.matrix(A)`. It should return  `TRUE`, if your answer is correct. Otherwise, please correct your answer. 
+
+Hint: Note that  `is.matrix()`  will return  `FALSE`  on a non-matrix type of input. Eg: a vector and so on.
+
+### Exercise 3
+Create a vector with 12 integers. Convert the vector to a 4x3 matrix  B  using  `matrix()`. Please change the column names to  `x`, `y`, `z`  and row names to  `a`, `b`, `c`, `d`.
+
+The argument  `byrow`  in  `matrix()`  is set to be  `FALSE`  by default. Please change it to  `TRUE`  and print  `B`  to see the differences.
+
+### Exercise 4
+Please obtain the transpose matrix of  `B`  named  `tB` .
+
+### Exercise 5
+Now  `tB`  is a 3×4 matrix. By the rule of matrix multiplication in algebra, can we perform  `tB*tB`  in R language? (Is a 3×4 matrix multiplied by a 3×4 allowed?) What result would we get?
+
+### Exercise 6
+Run `tB * tB`.
+
+Explain why this is not correct matrix multiplication.  What did R do?  What is the correct command for matrix multiplication.
+
+
+### Exercise 7
+If we convert  `A`  to a  `data.frame`  type instead of a  `matrix` , can we still compute a conventional matrix multiplication for matrix  `A`  multiplies matrix  `A` ? Is there any way we could still perform the matrix multiplication for two  `data.frame`  type variables? (Assuming proper dimension)? Explain.
+
+### Exercise 8
+Extract a sub-matrix from  `B`  named  `subB` . It should be a 3×3 matrix which includes the last three rows of matrix  `B`  and their corresponding columns.
+
+### Exercise 9
+Compute  `3*A` ,  `A+subB` ,  `A-subB` . Can we compute  `A+B`? Why?
+
+### Exercise 10
+Generate a n x n matrix (square matrix)  `A1`  with proper number of random numbers, then generate another n * m matrix  `A2`.
+
+If we have  `A1*M=A2`  (Here * represents the conventional multiplication), please solve for  `M`.
+Hint: use the  runif()  and  solve()  functions. E.g.,  runif(9)  should give you 9 random numbers.
+
+### Exercise 11
+Run `data(mpg, package = 'ggplot2')` to make the data set available for this problem.
+
+Use matrix operations to perform a linear regression from the `mtcars` dataset. Determine the ordinary least squares regression coefficients for fuel economy (`mpg`) as a function of `disp`, `wt`, and `am` (displacement, weight, and transmission type, respectively).
+
+### Exercise 12 (STA 780 Only)
+Repeat exercise 11, adding `cyl` to the independent variables.  Describe what may be wrong with including `cyl` as a single column in the independent variables matrix.  
+
+### Exercise 13 (STA 780 Only)
+Explore the `ifelse` function.  Construct the proper matrix to complete the ordinary least squares regression from Exercise 12 and calculate the regression coefficients.
