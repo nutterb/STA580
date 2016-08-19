@@ -7,14 +7,14 @@ These are the homework assignments and project guidelines for **R and Introducto
 Course Schedule
 ---------------
 
-<table style="width:289%;">
+<table>
 <colgroup>
-<col width="16%" />
-<col width="8%" />
-<col width="8%" />
-<col width="126%" />
-<col width="93%" />
-<col width="36%" />
+<col width="5%" />
+<col width="2%" />
+<col width="2%" />
+<col width="43%" />
+<col width="32%" />
+<col width="12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -223,7 +223,7 @@ Course Schedule
 <td align="left">11/14/2016</td>
 <td align="left">13</td>
 <td align="left">6</td>
-<td align="left">Information Criteria</br>Likelihood Ratio Tests</td>
+<td align="left">Information Criteria</br>Likelihood Ratio Tests</br>Cross Validation</td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
@@ -231,7 +231,7 @@ Course Schedule
 <td align="left">11/16/2016</td>
 <td align="left">13</td>
 <td align="left">6</td>
-<td align="left">Cross Validation</br>Bootstrapping</td>
+<td align="left">Random Forest</td>
 <td align="left">Homework #9 Due</td>
 <td align="left"></td>
 </tr>
@@ -239,7 +239,7 @@ Course Schedule
 <td align="left">11/21/2016</td>
 <td align="left">14</td>
 <td align="left">6</td>
-<td align="left">Random Forest (time permitting)</td>
+<td align="left">In Class Exam</td>
 <td align="left">Midterm #2 Due</br>Assign Final Exam</td>
 <td align="left"></td>
 </tr>
