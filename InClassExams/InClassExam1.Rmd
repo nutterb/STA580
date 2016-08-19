@@ -1,0 +1,57 @@
+---
+title: "In Class Exam"
+output: html_document
+---
+
+_This is a closed-book exam.  Please write in complete sentences and submit your hand-written work at the end of the test period_
+
+### Question 1
+Describe the difference between interpreted and compiled languages.
+
+### Question 2
+What are the advantages of R being an interpreted language? What are the disadvantages?
+
+### Question 3
+Describe the following classes of R objects: list, matrix, array, data.frame
+
+### Question 4
+Describe the differences between strings and factors.
+
+### Question 5
+Assume that the object `fctr` has class "factor" with levels `c (0, 1)`. What will be the output of `as.numeric (fctr)`? How do you get the numeric values of the levels? Describe why R has this behavior.
+
+### Question 6
+Describe how Date class objects are stored internally.
+
+### Question 7
+Describe how POSIXct objects are stored internally.
+
+### Question 8
+What is the origin date for R date and datetime objects?
+
+### Question 9
+What is the expected output of `round (1.5)`?  Of `round (2.5)`? Why?
+
+### Question 10
+Why is it widely believed that `for` loops are slower than `apply` functions?
+
+### Question 11
+True or False: 
+
+You should always use apply functions instead of for loops. Justify your answer.
+
+### Question 12
+True of False:
+
+You should avoid using the `T` and `F` abbreviations for logical values. Justify your answer.
+
+### Question 13
+True of False:
+
+Our top priority should be writing elegant, efficient code. Justify your answer.
+
+### Question 14
+Who is the person for whom we are most concerned about writing code?
+
+### Question 15
+Name three sources to which you can turn for help writing and understanding code (at least one must be accessible from within R)
